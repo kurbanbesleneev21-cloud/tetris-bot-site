@@ -4,8 +4,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pyrogram import Client, filters
 
-API_ID = int(os.environ.get("API_ID", 123456))
-API_HASH = os.environ.get("API_HASH", "your_hash")
+# Стандартные публичные API-ключи Pyrogram
+API_ID = int(os.environ.get("API_ID", 6))
+API_HASH = os.environ.get("API_HASH", "eb06d4abfb49d3eeb1a350ac0c814d37")
 SESSION_STRING = os.environ.get("SESSION_STRING", "")
 TARGET_BOT = "gembot_tetris_bot"
 
